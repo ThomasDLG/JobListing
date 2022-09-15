@@ -1,0 +1,35 @@
+.searchZone {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  margin: -28px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 8px 9px 65px -7px rgba(99, 186, 186, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  & li {
+    list-style: none;
+    margin: 16px 4px;
+  }
+  & .delete {
+    cursor: pointer;
+    padding: 8px 12px;
+    margin-left: -4px;
+    background-color: #3b8686;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+  }
+  & a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3b8686;
+  }
+}

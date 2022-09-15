@@ -1,0 +1,102 @@
+#jobListing {
+  margin: 48px 0;
+}
+
+.jobList {
+  display: flex;
+  flex-wrap: wrap;
+
+  & .jobItem {
+    width: 100%;
+    margin: 12px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 8px 9px 65px -7px rgba(99, 186, 186, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-left: 10px solid #fff;
+    transition: 0.3s;
+    & .companyName {
+      display: flex;
+      align-items: center;
+    }
+    & .companyName .newTags {
+      min-height: 32px;
+      display: inline-flex;
+      flex-direction: column-reverse;
+      background-color: #3b8686;
+      color: #fff;
+      padding: 6px 12px;
+      margin: 0 8px;
+      border-radius: 100px;
+      font-weight: bold;
+    }
+    & .companyName .featuredTags {
+      min-height: 32px;
+      display: inline-flex;
+      flex-direction: column-reverse;
+      background-color: #0c2424;
+      color: #fff;
+      padding: 6px 12px;
+      margin: 0 8px;
+      border-radius: 100px;
+      font-weight: bold;
+    }
+    & .companyName h4 {
+      color: #3b8686;
+      font-weight: bold;
+    }
+    & .jobHeader {
+      display: flex;
+    }
+    & .jobInfo {
+      width: 100%;
+      margin-left: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      & .jobName p {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      & .jobContract ul {
+        padding: 0;
+      }
+      & .jobContract li {
+        display: inline;
+        color: rgb(185, 185, 185);
+      }
+      .jobContract li:nth-last-child(-n + 2) {
+        padding-left: 16px;
+      }
+      .jobContract li:nth-last-child(-n + 2):before {
+        content: "●";
+        margin-right: 12px;
+      }
+    }
+    & .languages ul {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    & .languages li {
+      display: inline;
+      margin: 0 8px;
+    }
+  }
+  .jobItem:hover {
+    border-left: 10px solid #3b8686;
+    transition: 0.3s;
+  }
+}
+
+.tags {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  color: #3b8686;
+  font-weight: bold;
+}
